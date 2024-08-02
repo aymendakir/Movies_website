@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./src/Fonts/INGAME.ttf) format('truetype');
+
+}
+.MyFont {
+    font-family: MyFont, sans-serif;
+}
+*{
+    font-family: "Tajawal", sans-serif;
+
+
+}
+.headers{
+    overflow-x: hidden;
+
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    overflow: hidden;
+}
+.point::before{
+
+    content: '';
+    border: 2px solid #EFD912;
+    -webkit-border-radius: 30px;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    left: -17px;
+    top: 8px;
+    -webkit-animation: .8s ease-out infinite pulsate;
+    opacity: 0;
+}
+
+.point::after{
+    content: '';
+    background-color: #EFD912;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left:-15px;
+    width: 10px;
+    height: 10px;
+
+}
+@keyframes pulsate {
+    0% {
+        -webkit-transform: scale(.1, .1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0;
+    }
+
+    }
+.tajawal-extralight {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.tajawal-light {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tajawal-regular {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tajawal-medium {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.tajawal-bold {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tajawal-extrabold {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.tajawal-black {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.lilita {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header1{
+    transform: translate(100%);
+    opacity: 0;
+
+
+
+
+}
+
+.headeroff1{
+
+    -webkit-animation: .8s ease-out  header1off;
+
+
+
+}
+.headeron1{
+
+    -webkit-animation: .8s ease-out  header1on;
+
+
+
+}
+@keyframes header1on {
+    0% {
+        -webkit-transform: translate(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+
+}
+@keyframes header1off {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(-100%);
+        opacity: 0;
+    }
+
+}
+.header2{
+    transform: translate(50%);
+    opacity: 0;
+
+
+
+
+}
+
+.headeron2{
+
+    -webkit-animation: .8s ease-out  header2on;
+
+
+
+}
+.headeroff2{
+
+    -webkit-animation: .8s ease-out  header2off;
+
+
+
+}
+@keyframes header2on {
+    0% {
+        -webkit-transform: translate(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+
+}
+@keyframes header2off {
+    0% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(-100%);
+        opacity: 0;
+    }
+
+}
+.header3{
+    transform: translate(100%);
+    opacity: 0;
+
+
+
+
+}
+
+.headeron3{
+
+    -webkit-animation: .8s ease-out  header3on;
+
+
+
+}
+.headeroff3{
+
+    -webkit-animation: .8s ease-out  header3off;
+
+
+
+}
+@keyframes header3on {
+    0% {
+        -webkit-transform: translate(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+
+}
+@keyframes header3off {
+    0% {
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(-100%);
+        opacity: 0;
+    }
+
+}
+.card:hover{
+    .cardanimation{
+        opacity: 1;
+    }
+}
+.shows:hover{
+    .show{
+        opacity: 1;
+    }
+    .showstest{
+        color: red;
+
+    }
+}
