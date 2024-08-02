@@ -130,7 +130,7 @@ export function Header() {
 
 //***********************************
     return (
-        <header className={"flex relative w-[90%] mx-auto rounded-xl h-[90vh] items-end headers mt-10"}>
+        <header className={"flex relative w-[90%] mx-auto rounded-xl h-[90vh] items-end headers mt-10 overflow-y-hidden"}>
 
 
             <div
@@ -146,7 +146,7 @@ export function Header() {
                     className={"absolute top-0 left-0 w-full h-full bg-gradient-to-l from-black/80 via-black/10 to-transparent z-10"}></div>
                 {MovieData && (
                     <div
-                        className={"relative translate-x-[200%] translate-y-40 w-[450px] h-[520px] flex flex-col items-end justify-center text-white space-y-5 z-50"}>
+                        className={"relative translate-x-[180%] translate-y-40 w-[450px] h-[520px] flex flex-col items-end justify-center text-white space-y-5 z-50"}>
                         <p className={"text-3xl font-semibold"}>متوفر الآن</p>
                         <picture>
                             <img src={`https://image.tmdb.org/t/p/original/${MovieData}`} alt={"خلفية 2"} width={400}/>
@@ -195,7 +195,7 @@ export function Header() {
                     className={"absolute top-0 left-0 w-full h-full bg-gradient-to-l from-black/80 via-black/10 to-transparent z-10"}></div>
                 {MovieData1 && (
                     <div
-                        className={"relative translate-x-[200%] translate-y-40 w-[450px] h-[520px] flex flex-col items-end justify-center text-white space-y-5 z-50"}>
+                        className={"relative translate-x-[180%] translate-y-40 w-[450px] h-[520px] flex flex-col items-end justify-center text-white space-y-5 z-50"}>
                         <p className={"text-3xl font-semibold"}>متوفر الآن</p>
                         <picture>
                             <img src={`https://image.tmdb.org/t/p/original/${MovieData1}`} alt={"خلفية 2"} width={400}/>
@@ -242,7 +242,7 @@ export function Header() {
                     className={"absolute top-0 left-0 w-full h-full bg-gradient-to-l from-black/80 via-black/10 to-transparent z-10"}></div>
                 {MovieData2 && (
                     <div
-                        className={"relative translate-x-[200%] translate-y-40 w-[450px] h-[520px] flex flex-col items-end justify-center text-white space-y-5 z-50"}>
+                        className={"relative translate-x-[180%] translate-y-40 w-[450px] h-[520px] flex flex-col items-end justify-center text-white space-y-5 z-50"}>
                         <p className={"text-3xl font-semibold"}>متوفر الآن</p>
                         <picture>
                             <img src={`https://image.tmdb.org/t/p/original/${MovieData2}`} alt={"خلفية 2"} width={400}/>

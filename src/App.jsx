@@ -59,7 +59,7 @@ function App() {
 
   return (
       <div>
-
+<title className={"text-center text-red-600"}>المضاف حديثا</title>
           <Navigation />
           <Header />
           <Genre />

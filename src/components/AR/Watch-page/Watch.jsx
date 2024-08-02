@@ -65,6 +65,7 @@ const directrice=directing?.slice(0,5).filter(index=>{
     return (
 
         <>
+            <title>{type}</title>
             <div className={"fixed w-full h-full top-0 left-0 bg-gray-900/80 z-10 "}>
             </div>
 <div className={"fixed w-full h-full top-0 left-0 "}>
@@ -245,7 +246,7 @@ const directrice=directing?.slice(0,5).filter(index=>{
                             <article key={index} className="post">
                                 <div className="col-xs-6th col-sm-6th col-md-6th col-lg-6th">
                                     <div className="block-post">
-                                        <NavLink to={`/watch/${type}/${item.id}` }
+                                        <NavLink to={`/details/${type}/${item.id}` }
                                            title={item.title}>
                                             <span className="ribbon">1080P</span>
 

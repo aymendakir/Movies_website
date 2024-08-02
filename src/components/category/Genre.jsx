@@ -99,6 +99,7 @@ const{name,id}=useParams()
 
     return (
         <header  className={"min-h-[100vh]"}>
+            <title>{name}</title>
             <div className={"fixed top-0 left-0 w-full h-full bg-black/80 z-0"}></div>
             <Navigation />
             <section >
